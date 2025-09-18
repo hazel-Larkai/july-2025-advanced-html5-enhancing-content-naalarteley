@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced Form</title>
+</head>
+<body>
+  <header>
+    <h1><u>NewMovies.Inc</u></h1>
+    <p>A simple demo with lists, tables, media, and a form.</p>
+  </header>
+
+  <!-- List -->
+  <section>
+    <h2>Benefits</h2>
+    <ul>
+      <li>Stay updated</li>
+      <li>Get offers</li>
+      <li>Provide feedback</li>
+    </ul>
+  </section>
+
+  <!-- Table -->
+  <section>
+    <h2>Plans</h2>
+    <table border="1">
+      <tr>
+        <th>Plan</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Basic</td>
+        <td>$5</td>
+      </tr>
+       <tr>
+        <td>Regular</td>
+        <td>$10</td>
+      </tr>
+      <tr>
+        <td>Premium</td>
+        <td>$15</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Media -->
+  <section>
+    <h2>Media</h2>
+    <img src="netflix-3733812_1280.jpg" alt="Sample Image" width="350">
+  </section>
+
+  <!-- Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="/submit" method="post" autocomplete="on">
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter full name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+      <label for="phone">Phone:</label><br>
+      <input type="tel" id="phone" name="phone" placeholder="+123456789" required><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" placeholder="Choose username" required><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <label for="plan">Select Plan:</label><br>
+      <select id="plan" name="plan" required>
+        <option value="" disabled selected>--Choose--</option>
+        <option value="basic">Basic</option>
+        <option value="premium">Premium</option>
+      </select><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" name="gender" value="female" required> Female
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="other"> Other<br><br>
+
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments" placeholder="Write here..."></textarea><br><br>
+
+      <label for="ref">Referral Code:</label><br>
+      <input type="text" id="ref" name="ref" value="WELCOME2025" readonly><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy;📽️Pay once, enjoy endlessly</p>
+  </footer>
+</body>
+</html>
